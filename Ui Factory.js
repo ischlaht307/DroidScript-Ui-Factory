@@ -7,11 +7,10 @@ function OnStart(){
 var arr =[];
 
 	lay = app.CreateLayout( "Linear", "Center","FillXY" );
+		lay.SetBackGradient(color.base[0], color.base[1], color.base[2], "bottom-top" )
 	var _UI = new _UI_Factory("Light");
 	var color = _UI.color;
-	//var _UI = new _UI_Factory("Light");
-	lay.SetBackGradient(color.base[0], color.base[1], color.base[2], "bottom-top" )
-	
+
 var ly  = _UI.Card("card",lay, 0.9);
 
 var newbutton = _UI.Button(newbutton, ly, "btntwo", 0.5);
@@ -26,7 +25,7 @@ newbutton  = _UI.Button("mainbtn", ly, "mybtn", 0.6);
 	var playbtn =	app.AddButton( lay,"play", 0.8,-1, null );
 
 		
-		RTbox.click = function(){app.Alert( "kooookkk") }
+		//RTbox.click = function(){app.Alert( "kooookkk") }
 		
 			playbtn.SetOnTouch( play);	
 	function play(){

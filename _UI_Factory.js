@@ -136,7 +136,9 @@ _UI_Factory.prototype.TextBoxRoundOnChange = function(data){
  
  _UI_Factory.prototype.TextBoxRoundOnFocus = function(data){
  		this.data.divider.SetBackColor("red");
- 		Rboxone.SetBackColor("green");
+// 		lastFocus.SetBackColor("black");
+ 		app.Alert(this.data.name	+	"	:&:	"	+	lastFocus);
+ 		//Rboxone.SetBackColor("green");
  	
  						
  							
@@ -151,8 +153,8 @@ _UI_Factory.prototype.TextBoxRoundOnChange = function(data){
  									app.ShowPopup('lastFocus');
  								}
 					},500);
-			*/
-					lastFocus = this.data.id;
+			*/.
+			//	this.lastFocus = this.data.divider;
  };
 
 App.prototype.MyBtn = function(id,layout,name,size){
